@@ -19,7 +19,7 @@ public class ContaTerminal {
             System.out.println("Nome: "+conta.getNomeCliente()); 
             System.out.println("Conta Bancário: "+conta.getContaCorrente());
             System.out.println("Agencia: "+conta.getAgencia());
-            System.out.print("Seu saldo é: R$ "+conta.getSaldo());
+            System.out.println("Seu saldo é: R$ "+conta.getSaldo());
                         
             }
 
@@ -41,8 +41,7 @@ public class ContaTerminal {
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
-            }
-                        
+            }      
             private static void recebeAgencia() {
                 System.out.println("Digite a sua agencia ex.: 1658-X");
                 try {
