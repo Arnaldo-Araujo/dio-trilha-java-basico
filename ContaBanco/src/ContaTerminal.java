@@ -17,11 +17,12 @@ public class ContaTerminal {
         recebeNomeCliente();
         recebeSaldo();
 
-        System.out.println("Nome: " + conta.getNomeCliente());
-        System.out.println("Conta Bancário: " + conta.getContaCorrente());
-        System.out.println("Agencia: " + conta.getAgencia());
-        System.out.println("Seu saldo é: R$ " + conta.getSaldo());
-
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência" 
+        +" é %s, sua conta é %s e seu saldo %f já está disponível para saque158-x!", 
+        conta.getNomeCliente(), 
+        conta.getAgencia(),
+        conta.getContaCorrente(), 
+        conta.getSaldo());
     }
 
     private static void recebeSaldo() {
