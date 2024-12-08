@@ -56,6 +56,7 @@ public class ContaTerminal {
             System.out.println("Digite seu numero da conta, ex.: 12345");        
             try {
                 int numconta = sc.nextInt();
+                sc.nextLine(); // Consome a quebra de linha residual
                 conta.setContaCorrente(numconta);    
             } catch (Exception e) {
                 System.out.println(e.getMessage());
